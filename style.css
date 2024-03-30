@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --dmsans: "DM Sans", sans-serif;
+  --main_green: #25dac5;
+  --main_blue: #151439;
+  --main_blue_faded: #15143954;
+}
+
+* {
+  color: inherit;
+  font-size: inherit;
+  font-family: var(--dmsans);
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 4rem 10rem;
+  min-height: 100vh;
+}
+
+/* Utility Classes */
+.juadeb_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Utility Classes */
+
+/* Nav Styling */
+nav .logo {
+  color: var(--main_blue);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+nav div:first-of-type {
+  gap: 2rem;
+}
+
+nav div:first-of-type ul {
+  gap: 2rem;
+  color: var(--main_blue_faded);
+}
+
+nav .bx-menu {
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+nav div:first-of-type ul > li:first-of-type a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div:last-of-type > ul {
+  gap: 2rem;
+  color: var(--main_blue_faded);
+}
+
+nav div:last-of-type > ul > button {
+  width: 100px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: var(--main_green);
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+nav div:last-of-type > ul > button:hover {
+  box-shadow: 0px 0px 5px #808080;
+}
+/* Nav Styling */
+
+/* Main Styling */
+main {
+  margin-top: 9rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 18px;
+  gap: 5.5rem;
+}
+
+main div:last-of-type img {
+  width: 100%;
+}
+
+main .post_css {
+  position: relative;
+}
+
+main .post_css img:last-of-type {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px #0a0a1a;
+}
+
+main div:last-of-type p {
+  font-size: 18px;
+  color: var(--main_blue_faded);
+  width: 80%;
+}
+
+main div:first-of-type h1 {
+  color: var(--main_blue);
+  font-size: 50px;
+  margin-bottom: 3rem;
+}
+
+.juadeb_form {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  gap: 1.9rem;
+}
+
+.juadeb_form input {
+  border: 1px solid var(--main_blue_faded);
+  width: 90%;
+}
+
+.juadeb_form button {
+  background-color: var(--main_green);
+  color: #fff;
+  width: 100%;
+}
+
+.juadeb_form input,
+.juadeb_form button {
+  height: 60px;
+  border-radius: 999px;
+  padding: 0 28px;
+}
+
+form span {
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+  color: var(--main_blue_faded);
+}
+
+form {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Main Styling */
+
+/* Resp Design */
+@media (max-width: 980px) {
+  body {
+    padding: 4rem 25px;
+    /* min-height: 100vh; */
+  }
+  nav div:first-of-type ul {
+    display: none;
+  }
+  nav div:last-of-type > ul {
+    display: none;
+  }
+  nav .bx-menu {
+    display: block;
+  }
+  main {
+    margin-top: 3.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main div:first-of-type h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+  }
+  .juadeb_form {
+    align-items: center;
+    justify-content: center;
+
+    width: 87vw;
+  }
+  .juadeb_form input,
+  .juadeb_form button {
+    height: 50px;
+    border-radius: 999px;
+    padding: 0 28px;
+  }
+
+  .juadeb_form input::placeholder {
+    font-size: 14px;
+  }
+
+  main div:last-of-type p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (width: 1024px) {
+  body {
+    padding: 4rem 3rem;
+    /* min-height: 100vh; */
+  }
+  nav div:first-of-type ul {
+    display: none;
+  }
+  nav div:last-of-type > ul {
+    display: none;
+  }
+  nav .bx-menu {
+    display: block;
+  }
+  main {
+    margin-top: 3.5rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  main div:first-of-type h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2.5rem;
+  }
+  .juadeb_form {
+    align-items: center;
+    justify-content: center;
+
+    width: 87vw;
+  }
+  .juadeb_form input,
+  .juadeb_form button {
+    height: 50px;
+    border-radius: 999px;
+    padding: 0 28px;
+  }
+
+  .juadeb_form input::placeholder {
+    font-size: 14px;
+  }
+
+  main div:last-of-type p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (width: 768px) {
+  body {
+    padding: 3rem;
+  }
+}
+/* Resp Design */
